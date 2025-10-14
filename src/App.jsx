@@ -7,9 +7,9 @@ function App() {
     <>
       <Header />
       <main className="container">
-        {/* <div className="in-progress-container">
+        <div className="in-progress-container">
           <h1>🚧 Website Under Construction 🚧</h1>
-        </div> */}
+        </div>
         <div className="card">
           <h1>Fuzer DEV</h1>
           <p>Hi! My name is João,  I'm 23 years old and I'm from Brazil. Let's built more than a website a experience!</p>
