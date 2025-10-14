@@ -23,6 +23,21 @@ body {
   margin: 0 auto;
   /* border: 1px solid red; */
 
+  .in-progress-container {
+    position: absolute;
+    max-width: 900px;
+    text-align: center;
+    padding: 10px;
+    background: #000000e8;
+    z-index: 10;
+    rotate: -10deg;
+
+    h1 {
+      font-size: 4rem;
+      color: #fff;
+    }
+  }
+
   .projects-section {
     margin-top: 5rem;
     display: flex;
