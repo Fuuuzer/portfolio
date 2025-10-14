@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  /* display: flex; */
+  width: 100vw;
+  /* justify-content: center; */
+}
+
+.container {
+  width: 900px;
+  max-width: 80dvw; /* Alterar depois */
+  margin: 0 auto;
+  /* border: 1px solid red; */
+
+  .projects-section {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      top: -30px;
+      height: 3px;
+      align-self: center;
+      display: block;
+      background: #000;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      padding: 10px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      /* align-self: flex-end; */
+      mix-blend-mode: difference;
+      background: #fff;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 0;
+        height: 100%;
+        background: #fff;
+        transition: width 0.2s ease;
+        mix-blend-mode: difference;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.card {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  max-width: 400px;
+  /* padding: 20px; */
+  background: white;
+}
+
+.card h1 {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 3.75rem;
+  color: white;
+  mix-blend-mode: difference;
+  padding: 10px;
+}
+
+.card h1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  transition: width 0.2s ease;
+  mix-blend-mode: difference;
+}
+
+.card h1:hover::after {
+  width: 100%;
+}
+
+.card p {
+  position: relative;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.card p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  transition: width 0.3s ease;
+  mix-blend-mode: difference;
+}
+
+.card h1:hover + p::after,
+p:hover::after,
+h1:has(+ p:hover)::after {
+  width: 100%;
+}

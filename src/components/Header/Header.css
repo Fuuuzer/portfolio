@@ -1,0 +1,41 @@
+.header-container {
+  width: 900px; /* Alterar depois */
+  max-width: 80dvw;
+  margin: 0 auto;
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+
+    h1 {
+      font-size: 2.75rem;
+      cursor: pointer;
+      background: black;
+      color: #fff;
+      padding: 10px;
+    }
+
+    ul {
+      display: flex;
+      gap: 15px;
+      font-size: 1.125rem;
+
+      li {
+        background: #fff;
+        color: #000;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: 0.15s ease-in-out;
+
+        &:hover {
+          background: #000;
+          color: #fff;
+          transition: 0.15s ease-in-out;
+        }
+      }
+    }
+  }
+}
