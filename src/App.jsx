@@ -7,17 +7,25 @@ function App() {
     <>
       <Header />
       <main className="container">
-        <div className="in-progress-container">
+        {/* <div className="in-progress-container">
           <h1>🚧 Website Under Construction 🚧</h1>
-        </div>
+        </div> */}
         <div className="card">
           <h1>Fuzer DEV</h1>
           <p>Hi! My name is João,  I'm 23 years old and I'm from Brazil. Let's built more than a website a experience!</p>
         </div>
         <section className="projects-section">
-          <h2>Projects(?)</h2>
+          <h2>Projects (?)</h2>
           <div className="projects-cards">
-            <div className="card"></div>
+            <div className="card-projects">
+              <p>Quiz interativo</p>
+            </div>
+            <div className="card-projects">
+              <p>Cineboxd</p>
+            </div>
+            <div className="card-projects">
+              <p>Galos Foda</p>
+            </div>
           </div>
         </section>
       </main>
