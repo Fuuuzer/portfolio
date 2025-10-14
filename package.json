@@ -6,7 +6,7 @@
   "homepage": "https://fuuuzer.github.io/portfolio",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && echo > dist/.nojekyll",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"

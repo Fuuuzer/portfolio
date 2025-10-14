@@ -25,7 +25,8 @@ body {
 
   .in-progress-container {
     position: absolute;
-    max-width: 900px;
+    width: 900px;
+    max-width: 80dvw;
     text-align: center;
     padding: 10px;
     background: #000000e8;
