@@ -15,6 +15,8 @@ body {
   /* display: flex; */
   width: 100dvw;
   /* justify-content: center; */
+  overflow-x: hidden;
+  height: 200vh;
 }
 
 .container {
@@ -82,39 +84,69 @@ body {
       }
     }
     .projects-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
       gap: 10px;
       margin-top: 1rem;
 
       .card-projects {
-        padding: 10px;
+        /* padding: 10px; */
+        flex: 1;
         font-weight: 500;
         border: 1px solid black;
         cursor: pointer;
         transition: 0.1s ease-in-out;
 
+        p {
+          padding: 10px;
+        }
+
         &:hover {
           background: #000;
           color: #fff;
           box-shadow: 0px 3px 10px -6px rgba(0, 0, 0, 0.75);
+          transform: scale(1.05);
+          z-index: 5;
+          background: #000;
+          color: #fff;
+        }
+
+        &:has(:hover) .card-img {
+          transform: scale(1.1);
+          display: flex;
+          /* border-bottom: 1px solid #000; */
+          transition: 0.2s;
+        }
+
+        .card-img {
+          display: flex;
+          align-items: center;
+          /* border-bottom: 1px solid #000; */
+          justify-content: center;
+
+          p {
+            display: none;
+          }
         }
       }
     }
   }
 }
 
-.card {
+.about {
   margin-top: 5rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
   /* gap: 10px; */
-  max-width: 400px;
   /* padding: 20px; */
   background: white;
+
+  .dwight-image img {
+    width: 500px;
+  }
 }
 
-.card h1 {
+.about h1 {
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -124,7 +156,7 @@ body {
   padding: 10px;
 }
 
-.card h1::after {
+.about h1::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -135,18 +167,18 @@ body {
   mix-blend-mode: difference;
 }
 
-.card h1:hover::after {
+.about h1:hover::after {
   width: 100%;
 }
 
-.card p {
+.about p {
   position: relative;
   font-size: 1.25rem;
   cursor: pointer;
   padding: 10px;
 }
 
-.card p::after {
+.about p::after {
   content: "";
   position: absolute;
   top: 0;
@@ -158,7 +190,7 @@ body {
   mix-blend-mode: difference;
 }
 
-.card h1:hover + p::after,
+.about h1:hover + p::after,
 p:hover::after,
 h1:has(+ p:hover)::after {
   width: 100%;
