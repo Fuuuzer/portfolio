@@ -18,13 +18,13 @@ function App() {
           <h2>Projects (?)</h2>
           <div className="projects-cards">
             <div className="card-projects">
-              <p>Quiz interativo</p>
+              <p>1. Quiz interativo</p>
             </div>
             <div className="card-projects">
-              <p>Cineboxd</p>
+              <p>2. Cineboxd</p>
             </div>
             <div className="card-projects">
-              <p>Galos Foda</p>
+              <p>3. Galos Foda</p>
             </div>
           </div>
         </section>
