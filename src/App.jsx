@@ -22,9 +22,9 @@ function App() {
       <ReactLenis root /><ReactLenis root options={{ autoRaf: false }} ref={lenisRef} />
       <Header />
       <main className="container">
-        <div className="in-progress-container">
+        {/* <div className="in-progress-container">
           <h1>🚧 Website Under Construction 🚧</h1>
-        </div>
+        </div> */}
 
         <div className="about">
           <div>
@@ -40,24 +40,20 @@ function App() {
           <h2>Projects (?)</h2>
           <div className="projects-cards">
             <div className="card-projects">
-              <div className="card-img">
-                <p>imagem aqui</p>
-              </div>
               <p>1. Quiz interativo</p>
+              <div className="card-img">
+                <p>Um quiz interativo, com 5 perguntas diretas. Você possui 3 vidas e a cada resposta errada você perde uma delas. Após perder todas o quiz recomeça.</p>
+              </div>
             </div>
 
             <div className="card-projects">
-              <div className="card-img">
-                <p>imagem aqui</p>
-              </div>
               <p>2. Cineboxd</p>
+
             </div>
 
             <div className="card-projects">
-              <div className="card-img">
-                <p>imagem aqui</p>
-              </div>
               <p>3. Galos Foda</p>
+
             </div>
 
           </div>
