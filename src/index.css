@@ -138,13 +138,29 @@ body {
   margin-top: 5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-align: left;
   /* gap: 10px; */
   /* padding: 20px; */
   background: white;
 
   .dwight-image img {
-    width: 500px;
+    width: 400px;
+    /* rotate: -15deg; */
+    /* border: 1px solid red; */
+    animation: 3s levitate infinite ease-in-out;
+  }
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+  100% {
+    transform: translateY(-0.5rem);
   }
 }
 

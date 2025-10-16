@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "./components/Header/Header"
 import { ReactLenis, useLenis } from "lenis/react"
+import Footer from "./components/footer/Footer"
 
 function App() {
   const lenisRef = React.useRef()
@@ -32,7 +33,7 @@ function App() {
             <p>Hi! My name is João,  I'm 23 years old and I'm from Brazil. Let's built more than a website a <strong> experience!</strong></p>
           </div>
           <div className="dwight-image">
-            <img src="./dwight.webp" alt="" />
+            <img src="./luci.png" alt="" />
           </div>
 
         </div>
@@ -49,7 +50,7 @@ function App() {
             <div className="card-projects">
               <p>2. Cineboxd</p>
               <div className="card-img">
-                <p>Um quiz interativo, com 5 perguntas diretas. Você possui 3 vidas e a cada resposta errada você perde uma delas. Após perder todas as 3 vidas o quiz recomeça.</p>
+                <p>Uma nova forma de avaliar e salvar filmes que já assistiu. Atualmente em fase inicial de desenvolvimento, mas a ideia é fazer algo parecido com o letterboxd</p>
               </div>
 
             </div>
@@ -57,16 +58,15 @@ function App() {
             <div className="card-projects">
               <p>3. Galos Foda</p>
               <div className="card-img">
-                <p>Um quiz interativo, com 5 perguntas diretas. Você possui 3 vidas e a cada resposta errada você perde uma delas. Após perder todas as 3 vidas o quiz recomeça.</p>
+                <p>Em breve...</p>
               </div>
 
             </div>
 
           </div>
         </section>
-
-
       </main>
+      <Footer />
     </>
   )
 }

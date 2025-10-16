@@ -1,0 +1,14 @@
+footer {
+  width: 900px;
+  max-width: 80vw;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  p {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+  }
+}
