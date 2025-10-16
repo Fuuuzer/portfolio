@@ -42,17 +42,23 @@ function App() {
             <div className="card-projects">
               <p>1. Quiz interativo</p>
               <div className="card-img">
-                <p>Um quiz interativo, com 5 perguntas diretas. Você possui 3 vidas e a cada resposta errada você perde uma delas. Após perder todas o quiz recomeça.</p>
+                <p>Um quiz interativo, com 5 perguntas diretas. Você possui 3 vidas e a cada resposta errada você perde uma delas. Após perder todas as 3 vidas o quiz recomeça.</p>
               </div>
             </div>
 
             <div className="card-projects">
               <p>2. Cineboxd</p>
+              <div className="card-img">
+                <p>Um quiz interativo, com 5 perguntas diretas. Você possui 3 vidas e a cada resposta errada você perde uma delas. Após perder todas as 3 vidas o quiz recomeça.</p>
+              </div>
 
             </div>
 
             <div className="card-projects">
               <p>3. Galos Foda</p>
+              <div className="card-img">
+                <p>Um quiz interativo, com 5 perguntas diretas. Você possui 3 vidas e a cada resposta errada você perde uma delas. Após perder todas as 3 vidas o quiz recomeça.</p>
+              </div>
 
             </div>
 
