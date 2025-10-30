@@ -4,12 +4,17 @@ import { ReactLenis, useLenis } from "lenis/react"
 import Footer from "./components/footer/Footer"
 
 function App() {
-  const lenisRef = React.useRef()
+  const lenisRef = React.useRef();
+  const [bg, setBg] = React.useState('');
 
   React.useEffect(() => {
     function update(time) {
       lenisRef.current?.lenis?.raf(time)
     }
+
+    setTimeout(() => {
+      setBg(() => 'anima')
+    }, 1000)
 
     const rafId = requestAnimationFrame(update)
 
@@ -29,8 +34,8 @@ function App() {
 
         <div className="about">
           <div>
-            <h1>Fuzer DEV</h1>
-            <p>Hi! My name is João,  I'm 23 years old and I'm from Brazil. Let's built more than a website a <strong> experience!</strong></p>
+            <h1 className={bg}>João Fuzer</h1>
+            <p className={bg}>Hi! My name is João,  I'm 23 years old and I'm from Brazil. Let's built more than a website a <strong> experience!</strong></p>
           </div>
           <div className="dwight-image">
             <img src="./luci.png" alt="" />

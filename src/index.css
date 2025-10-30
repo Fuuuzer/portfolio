@@ -16,7 +16,7 @@ body {
   width: 100dvw;
   /* justify-content: center; */
   overflow-x: hidden;
-  height: 200dvh;
+  /* height: 200dvh; */
 }
 
 .container {
@@ -183,6 +183,7 @@ body {
   background: #fff;
   transition: width 0.2s ease;
   mix-blend-mode: difference;
+  /* animation: widthAnima 0.3s forwards; */
 }
 
 .about h1:hover::after {
@@ -212,6 +213,17 @@ body {
 p:hover::after,
 h1:has(+ p:hover)::after {
   width: 100%;
+}
+
+@keyframes widthAnima {
+  to {
+    width: 100%;
+  }
+}
+
+h1.anima::after,
+p.anima::after {
+  animation: widthAnima 0.3s forwards;
 }
 
 @media (max-width: 600px) {
