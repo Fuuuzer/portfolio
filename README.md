@@ -5,7 +5,8 @@ Eai! Eu sou **João Fuzer**, desenvolvedor front-end apaixonado por criar interf
 Atualmente explorando **React** e **Node.js**
 
 ## Acesse meu portfolio pelo link https://fuuuzer.github.io/portfolio
-<img width="1065" height="907" alt="image" src="https://github.com/user-attachments/assets/cafbfbde-98c0-4c9a-9bbf-91d122fa093a" />
+<img width="998" height="832" alt="image" src="https://github.com/user-attachments/assets/1656a386-6e26-4af0-a9c1-e80d2ac6df1b" />
+
 
 
 ## 📫 Contato
