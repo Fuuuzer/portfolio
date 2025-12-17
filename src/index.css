@@ -11,6 +11,15 @@ ul li {
   list-style: none;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
 body {
   /* display: flex; */
   width: 100dvw;
@@ -119,6 +128,7 @@ body {
           align-items: center;
           /* border-bottom: 1px solid #000; */
           justify-content: center;
+          color: #fff;
 
           p {
             width: 0%;

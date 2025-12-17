@@ -31,9 +31,9 @@ function App() {
       <ReactLenis root /><ReactLenis root options={{ autoRaf: false }} ref={lenisRef} />
       <Header />
       <main className="container">
-        <div className="in-progress-container">
+        {/* <div className="in-progress-container">
           <h1>🚧 Website Under Construction 🚧</h1>
-        </div>
+        </div> */}
 
         <div className="about">
           <div>
@@ -47,21 +47,26 @@ function App() {
         </div>
         <section className="projects-section">
           <h2>Projects (?)</h2>
-          
-          <div className="projects-cards">
-            <div onClick={handleClick} className="card-projects">
 
-              <p>1. Quiz interativo</p>
-              <div className="card-img">
-                <p>Um quiz interativo, com 5 perguntas diretas. Você possui 3 vidas e a cada resposta errada você perde uma delas. Após perder todas as 3 vidas o quiz recomeça.</p>
-              </div>
+          <div className="projects-cards">
+
+            <div onClick={handleClick} className="card-projects">
+              <a target="blank" href="https://fuuuzer.github.io/quiz-brabo/">
+                <p>1. Quiz interativo</p>
+                <div className="card-img">
+                  <p>Um quiz interativo, com 5 perguntas diretas. Você possui 3 vidas e a cada resposta errada você perde uma delas. Após perder todas as 3 vidas o quiz recomeça.</p>
+                </div>
+              </a>
             </div>
 
             <div className="card-projects">
-              <p>2. Cineboxd</p>
-              <div className="card-img">
-                <p>Uma nova forma de avaliar e salvar filmes que já assistiu. Atualmente em fase inicial de desenvolvimento, mas a ideia é fazer algo parecido com o letterboxd</p>
-              </div>
+              <a target="blank" href="https://github.com/Fuuuzer/cineboxd">
+
+                <p>2. Cineboxd</p>
+                <div className="card-img">
+                  <p>Uma nova forma de avaliar e salvar filmes que já assistiu. Atualmente em fase inicial de desenvolvimento, mas a ideia é fazer algo parecido com o letterboxd</p>
+                </div>
+              </a>
             </div>
 
             <div className="card-projects">
@@ -72,7 +77,7 @@ function App() {
             </div>
           </div>
         </section>
-      </main>
+      </main >
       <Footer />
     </>
   )
