@@ -61,19 +61,20 @@ function App() {
 
             <div className="card-projects">
               <a target="blank" href="https://github.com/Fuuuzer/cineboxd">
-
                 <p>2. Cineboxd</p>
                 <div className="card-img">
-                  <p>Uma nova forma de avaliar e salvar filmes que já assistiu. Atualmente em fase inicial de desenvolvimento, mas a ideia é fazer algo parecido com o letterboxd</p>
+                  <p>Uma nova forma de avaliar e salvar filmes que você já assistiu. Atualmente em fase inicial de desenvolvimento, mas a ideia é fazer algo parecido com o letterboxd</p>
                 </div>
               </a>
             </div>
 
             <div className="card-projects">
-              <p>3. Galos Foda</p>
-              <div className="card-img">
-                <p>Em breve...</p>
-              </div>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULcmljayBhc3RsZXnSBwkJTQoBhyohjO8%3D" target="_blank" rel="noopener noreferrer">
+                <p>3. Supresa</p>
+                <div className="card-img">
+                  <p>Clique e descubra!</p>
+                </div>
+              </a>
             </div>
           </div>
         </section>
