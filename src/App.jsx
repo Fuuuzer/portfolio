@@ -5,7 +5,7 @@ import Footer from "./components/footer/Footer"
 
 function App() {
   const lenisRef = React.useRef();
-  const [bg, setBg] = React.useState('');
+  // const [bg, setBg] = React.useState('');
   const [openProject, setOpenProject] = React.useState(false);
 
   React.useEffect(() => {
@@ -37,8 +37,8 @@ function App() {
 
         <div className="about">
           <div>
-            <h1 className={bg}>João Fuzer</h1>
-            <p className={bg}>Hi! My name is João,  I'm 23 years old and I'm from Brazil. Let's built more than a website a <strong> experience!</strong></p>
+            <h1>João Fuzer</h1>
+            <p>Hi! My name is João, I'm from Brazil and . Here is my portfolio, where you can see my knowledges and personal projects. </p>
           </div>
           <div className="dwight-image">
             <img src="./luci.png" alt="" />
