@@ -38,10 +38,10 @@ function App() {
         <div className="about">
           <div>
             <h1>João Fuzer</h1>
-            <p>Hi! My name is João, I'm from Brazil and . Here is my portfolio, where you can see my knowledges and personal projects. </p>
+            <p>Hi! My name is João, I'm from Brazil and i love create websites. Here is my portfolio, where you can see my personal projects.</p>
           </div>
-          <div className="dwight-image">
-            <img src="./luci.png" alt="" />
+          <div className="profile-image">
+            <img src="./joaofuzer.jfif" alt="" />
           </div>
 
         </div>

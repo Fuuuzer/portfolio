@@ -147,6 +147,7 @@ body {
 .about {
   margin-top: 5rem;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
   text-align: left;
@@ -154,11 +155,9 @@ body {
   /* padding: 20px; */
   background: white;
 
-  .dwight-image img {
+  .profile-image img {
     width: 400px;
-    /* rotate: -15deg; */
-    /* border: 1px solid red; */
-    animation: 3s levitate infinite ease-in-out;
+    border-radius: 50%;
   }
 }
 
