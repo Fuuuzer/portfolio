@@ -70,7 +70,7 @@ function App() {
 
             <div className="card-projects">
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULcmljayBhc3RsZXnSBwkJTQoBhyohjO8%3D" target="_blank" rel="noopener noreferrer">
-                <p>3. Supresa</p>
+                <p>3. Surpresa</p>
                 <div className="card-img">
                   <p>Clique e descubra!</p>
                 </div>
