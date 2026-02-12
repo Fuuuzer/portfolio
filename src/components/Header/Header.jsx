@@ -7,8 +7,8 @@ const Header = () => {
       <nav className='header-nav'>
         <h1>JF</h1>
         <ul>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>Projetos</li>
+          <li>Contato</li>
         </ul>
       </nav>
     </header>

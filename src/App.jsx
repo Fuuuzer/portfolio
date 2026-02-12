@@ -5,7 +5,7 @@ import Footer from "./components/footer/Footer"
 
 function App() {
   const lenisRef = React.useRef();
-  // const [bg, setBg] = React.useState('');
+  const [bg, setBg] = React.useState('');
   const [openProject, setOpenProject] = React.useState(false);
 
   React.useEffect(() => {
@@ -38,7 +38,7 @@ function App() {
         <div className="about">
           <div>
             <h1>João Fuzer</h1>
-            <p>Hi! My name is João, I'm from Brazil and i love create websites. Here is my portfolio, where you can see my personal projects.</p>
+            <p>Eai! Meu nome é João, moro no Brasil e adoro criar websites. Esse é meu portfolio e aqui você pode ver alguns projetos pessoais que desenvolvi.</p>
           </div>
           <div className="profile-image">
             <img src="./joaofuzer.jfif" alt="" />
@@ -46,7 +46,7 @@ function App() {
 
         </div>
         <section className="projects-section">
-          <h2>Projects (?)</h2>
+          <h2>Projetos</h2>
 
           <div className="projects-cards">
 
@@ -69,6 +69,14 @@ function App() {
             </div>
 
             <div className="card-projects">
+              <a href="https://gabrielleorezko.com" target="_blank" rel="noopener noreferrer">
+                <p>3. Portfólio Gabrielle</p>
+                <div className="card-img">
+                  <p>Portfólio criado para a fotógrafa Gabrielle, usado algumas animações e boas práticas de SEO.</p>
+                </div>
+              </a>
+            </div>
+            <div className="card-projects">
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULcmljayBhc3RsZXnSBwkJTQoBhyohjO8%3D" target="_blank" rel="noopener noreferrer">
                 <p>3. Surpresa</p>
                 <div className="card-img">
@@ -77,6 +85,9 @@ function App() {
               </a>
             </div>
           </div>
+        </section>
+        <section className="contact">
+          <h2>Contato</h2>
         </section>
       </main >
       <Footer />
